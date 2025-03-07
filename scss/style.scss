@@ -1,3 +1,18 @@
+
 @use "./utilities/variables";
 
+@use "./utilities/buttons";
+
 @use "./base/reset";
+
+@use "./base/tipografias";
+
+@use "./layout/header";
+
+@use "./layout/main-index";
+
+@use "./layout/footer";
+
+@use "./components/cards";
+
+@use "./components/images"

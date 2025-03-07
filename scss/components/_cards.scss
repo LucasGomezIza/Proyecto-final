@@ -1,0 +1,33 @@
+.secTop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffde59;
+    border-radius: .3125rem;
+    box-shadow: .3125rem .3125rem .25rem;
+    margin-top: .3125rem;
+    object-fit: contain;
+}
+
+div{
+    margin: 0;
+}
+
+.container-prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    article{
+        width: 15.225rem;
+        height: 18.75rem;
+        background-color: #ffde59;
+        margin: 1.25rem;
+        text-align: center;
+        color: black;
+        border-radius: .3125rem;
+        box-shadow: .3125rem .3125rem .25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

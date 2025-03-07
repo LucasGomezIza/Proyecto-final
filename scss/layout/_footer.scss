@@ -1,0 +1,16 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    div{
+        img{
+            width: 1.875rem;
+            a{
+                color: white;
+                font-size: .9375rem;
+                align-items: center;
+            }
+        }
+    }
+}
