@@ -16,7 +16,7 @@ article button:active {
 }
 
 * {
-  margin: 2px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Arimo", serif;
@@ -27,27 +27,30 @@ article button:active {
   color: black;
 }
 
+.destacadosMain h2 {
+  background-color: #ffde59;
+  color: black;
+}
+
 .titlePrincipal {
   font-family: "Audiowide", serif;
   font-weight: 25rem;
   font-style: bold;
-  font-size: 2.1875rem;
+  font-size: 1.875rem;
   margin-left: 1.25rem;
   margin-top: 0.625rem;
-  color: black;
 }
 
 .textIni {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-style: italic;
   display: flex;
   margin-top: 1.25rem;
   text-align: justify;
-  color: black;
 }
 
 .ejemp {
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   margin-top: 2.5rem;
   margin-left: 0.625rem;
   text-align: justify;
@@ -66,25 +69,60 @@ h2 {
   font-size: 1.5625rem;
 }
 
-header div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/*header{
+    div{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 3.125rem;
+        }
+        nav{
+            display: flex;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin: .3125rem;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.25rem;
+                        &:hover{
+                            color:#ffde59;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
 header div img {
   width: 3.125rem;
 }
-header div nav ul {
+
+.navBar {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 15px 20px;
 }
-header div nav ul li a {
+.navBar .logo img {
+  width: 50px;
+}
+.navBar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navBar .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: 1.25rem;
+  font-size: 16px;
+  transition: 0.3s;
 }
-header div nav ul li a:hover {
-  color: #ffde59;
+.navBar .nav-links li a:hover {
+  color: #f5b700;
 }
 
 .serviM {
@@ -92,6 +130,16 @@ header div nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  cursor: pointer;
 }
 
 form {
@@ -102,6 +150,15 @@ form {
 }
 form button {
   margin-top: 5px;
+}
+
+.textMain {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 700px;
 }
 
 footer {
@@ -181,15 +238,17 @@ footer div img a {
   grid-area: item8;
 }
 
+/*.secTop {
+    display: flex;
+    width: 100%;
+    background-color: #ffde59;
+    margin-top: .3125rem;
+    object-fit: contain;
+}*/
 .secTop {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  display: inline-block;
   width: 100%;
-  background-color: #ffde59;
-  border-radius: 0.3125rem;
-  box-shadow: 0.3125rem 0.3125rem 0.25rem;
-  margin-top: 0.3125rem;
-  object-fit: contain;
 }
 
 div {
@@ -217,8 +276,8 @@ div {
 
 .imgPrincipal {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  height: 43.75rem;
+  display: block;
 }
 
 .prod img {
@@ -235,12 +294,49 @@ div {
   }
 }
 @media (max-width: 768px) {
-  header div img {
+  .navMain div {
     align-items: center;
-    justify-content: center;
   }
+}
+@media (max-width: 768px) {
   .navBar {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(44, 44, 44, 0.9);
     text-align: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+  }
+}
+@media (max-width: 375px) {
+  .textMain {
+    width: 90%;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .textMain h1 {
+    font-size: 20px;
   }
 }
 

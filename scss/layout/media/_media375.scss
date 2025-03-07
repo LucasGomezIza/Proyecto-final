@@ -1,0 +1,13 @@
+@media (max-width: 375px) {
+    .textMain {
+        width: 90%; // Para que no ocupe todo el ancho
+        font-size: 10px; // Reduce el tamaño del texto
+        line-height: 1.4; // Mejora la legibilidad
+        text-align: center; // Centra el texto
+        margin: 0 auto; // Asegura que quede centrado
+        padding: 10px;
+    }
+    .textMain h1 {
+      font-size: 20px; // Tamaño del título más pequeño
+    }
+}

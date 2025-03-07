@@ -1,12 +1,15 @@
-.secTop {
+/*.secTop {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     background-color: #ffde59;
-    border-radius: .3125rem;
-    box-shadow: .3125rem .3125rem .25rem;
     margin-top: .3125rem;
     object-fit: contain;
+}*/
+
+.secTop{
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 div{

@@ -4,27 +4,33 @@
     color: black;
 }
 
+.destacadosMain{
+    h2{
+        background-color: #ffde59;
+        color: black;
+    }
+
+}
+
 .titlePrincipal{
     font-family: "Audiowide", serif;
     font-weight: 25rem;
     font-style: bold;
-    font-size: 2.1875rem;
+    font-size: 1.875rem;
     margin-left: 1.25rem;
     margin-top: .625rem;
-    color: black;
 }
 
 .textIni {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     font-style: italic;
     display: flex;
     margin-top: 1.25rem;
     text-align: justify;
-    color: black;
 }
 
 .ejemp {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     margin-top: 2.5rem;
     margin-left: .625rem;
     text-align: justify;
