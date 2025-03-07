@@ -1,5 +1,6 @@
 .gridCont{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 15.625rem);
     grid-template-rows: 200px 200px;
     grid-template-areas: 
@@ -21,34 +22,48 @@
 }
 
 .serv-1 {
-    background-color: lightcoral;
+    background-color: #ffde59;
     grid-area: item1;
+    border-radius: .3125rem;
+    box-shadow: .3125rem;
+    h2{
+        font-size: 30px;
+        color: black;
+        margin-bottom: 10px;
+    }
 }
 .serv-2 {
-    background-color: lightblue;
+    @extend .serv-1; 
+    background-color: #ffde59;
     grid-area: item2;
 }
 .serv-3 {
-    background-color: lightcyan;
+    background-color: #ffde59;
     grid-area: item3;
+    @extend .serv-1;
 }
 .serv-4 {
-    background-color: yellow;
+    background-color: #ffde59;
     grid-area: item4;
+    @extend .serv-1;
 }
 .serv-5 {
-    background-color: lightseagreen;
+    background-color: #ffde59;
     grid-area: item5;
+    @extend .serv-1;
 }
 .serv-6 {
-    background-color: red;
+    background-color: #ffde59;
     grid-area: item6;
+    @extend .serv-1;
 }
 .serv-7 {
-    background-color: blue;
+    background-color: #ffde59;
     grid-area: item7;
+    @extend .serv-1;
 }
 .serv-8 {
-    background-color: cyan;
+    background-color: #ffde59;
     grid-area: item8;
+    @extend .serv-1;
 }

@@ -1,7 +1,7 @@
 @media (max-width:768px) {
     .gridCont{
-        grid-template-columns: repeat(2,6.25rem);
-        grid-template-rows: repeat(2,5rem);
+        grid-template-columns: repeat(2,300px);
+        grid-template-rows: repeat(4,250px);
         grid-template-areas: 
         
         "item1 item2"
@@ -24,5 +24,4 @@
     .navBar{
         text-align: center;
     }
-
 }

@@ -3,11 +3,11 @@
 
 @use "./utilities/buttons";
 
+@use "./utilities/mixins";
+
 @use "./base/reset";
 
 @use "./base/tipografias";
-
-@use "./layout/media/media768";
 
 @use "./layout/header";
 
@@ -19,4 +19,6 @@
 
 @use "./components/cards";
 
-@use "./components/images"
+@use "./components/images";
+
+@use "./layout/media/media768";

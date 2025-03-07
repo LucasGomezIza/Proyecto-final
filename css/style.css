@@ -66,22 +66,6 @@ h2 {
   font-size: 1.5625rem;
 }
 
-@media (max-width: 768px) {
-  .gridCont {
-    grid-template-columns: repeat(2, 6.25rem);
-    grid-template-rows: repeat(2, 5rem);
-    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
-  }
-}
-@media (max-width: 768px) {
-  header div img {
-    align-items: center;
-    justify-content: center;
-  }
-  .navBar {
-    text-align: center;
-  }
-}
 header div {
   display: flex;
   justify-content: space-between;
@@ -137,6 +121,7 @@ footer div img a {
 
 .gridCont {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(4, 15.625rem);
   grid-template-rows: 200px 200px;
   grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8";
@@ -149,43 +134,50 @@ footer div img a {
   list-style: none;
 }
 
-.serv-1 {
-  background-color: lightcoral;
+.serv-1, .serv-8, .serv-7, .serv-6, .serv-5, .serv-4, .serv-3, .serv-2 {
+  background-color: #ffde59;
   grid-area: item1;
+  border-radius: 0.3125rem;
+  box-shadow: 0.3125rem;
+}
+.serv-1 h2, .serv-8 h2, .serv-7 h2, .serv-6 h2, .serv-5 h2, .serv-4 h2, .serv-3 h2, .serv-2 h2 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .serv-2 {
-  background-color: lightblue;
+  background-color: #ffde59;
   grid-area: item2;
 }
 
 .serv-3 {
-  background-color: lightcyan;
+  background-color: #ffde59;
   grid-area: item3;
 }
 
 .serv-4 {
-  background-color: yellow;
+  background-color: #ffde59;
   grid-area: item4;
 }
 
 .serv-5 {
-  background-color: lightseagreen;
+  background-color: #ffde59;
   grid-area: item5;
 }
 
 .serv-6 {
-  background-color: red;
+  background-color: #ffde59;
   grid-area: item6;
 }
 
 .serv-7 {
-  background-color: blue;
+  background-color: #ffde59;
   grid-area: item7;
 }
 
 .serv-8 {
-  background-color: cyan;
+  background-color: #ffde59;
   grid-area: item8;
 }
 
@@ -233,6 +225,23 @@ div {
   width: 100%;
   height: 60%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .gridCont {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
+  }
+}
+@media (max-width: 768px) {
+  header div img {
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
