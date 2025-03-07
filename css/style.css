@@ -286,6 +286,13 @@ div {
   object-fit: contain;
 }
 
+@media (max-width: 1024px) {
+  .gridCont {
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8";
+  }
+}
 @media (max-width: 768px) {
   .gridCont {
     grid-template-columns: repeat(2, 300px);
@@ -337,6 +344,13 @@ div {
   }
   .textMain h1 {
     font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .gridCont {
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(8, 250px);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8";
   }
 }
 

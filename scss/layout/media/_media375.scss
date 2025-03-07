@@ -11,3 +11,21 @@
       font-size: 20px; // Tamaño del título más pequeño
     }
 }
+
+@media (max-width: 375px) {
+    .gridCont{
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: repeat(8,250px);
+        grid-template-areas: 
+        
+        "item1" 
+        "item2"
+        "item3" 
+        "item4"
+        "item5" 
+        "item6"
+        "item7" 
+        "item8"
+        ;
+    }
+}
