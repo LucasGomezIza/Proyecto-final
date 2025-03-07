@@ -60,6 +60,28 @@ h2 {
   margin-top: 1.25rem;
 }
 
+.txtServ p {
+  text-align: center;
+  color: white;
+  font-size: 1.5625rem;
+}
+
+@media (max-width: 768px) {
+  .gridCont {
+    grid-template-columns: repeat(2, 6.25rem);
+    grid-template-rows: repeat(2, 5rem);
+    grid-template-areas: "item1 item2" "item3 item4" "item5 item6" "item7 item8";
+  }
+}
+@media (max-width: 768px) {
+  header div img {
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar {
+    text-align: center;
+  }
+}
 header div {
   display: flex;
   justify-content: space-between;
@@ -111,6 +133,60 @@ footer div img a {
   color: white;
   font-size: 0.9375rem;
   align-items: center;
+}
+
+.gridCont {
+  display: grid;
+  grid-template-columns: repeat(4, 15.625rem);
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "item1 item2 item3 item4" "item5 item6 item7 item8";
+  justify-content: center;
+  row-gap: 2.5rem;
+  column-gap: 5rem;
+}
+.gridCont div ul li {
+  text-align: center;
+  list-style: none;
+}
+
+.serv-1 {
+  background-color: lightcoral;
+  grid-area: item1;
+}
+
+.serv-2 {
+  background-color: lightblue;
+  grid-area: item2;
+}
+
+.serv-3 {
+  background-color: lightcyan;
+  grid-area: item3;
+}
+
+.serv-4 {
+  background-color: yellow;
+  grid-area: item4;
+}
+
+.serv-5 {
+  background-color: lightseagreen;
+  grid-area: item5;
+}
+
+.serv-6 {
+  background-color: red;
+  grid-area: item6;
+}
+
+.serv-7 {
+  background-color: blue;
+  grid-area: item7;
+}
+
+.serv-8 {
+  background-color: cyan;
+  grid-area: item8;
 }
 
 .secTop {

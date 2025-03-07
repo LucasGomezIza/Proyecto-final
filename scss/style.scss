@@ -7,11 +7,15 @@
 
 @use "./base/tipografias";
 
+@use "./layout/media/media768";
+
 @use "./layout/header";
 
 @use "./layout/main-index";
 
 @use "./layout/footer";
+
+@use "./layout/grids";
 
 @use "./components/cards";
 
