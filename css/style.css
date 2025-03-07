@@ -5,10 +5,14 @@ button {
 }
 
 .backPage {
-  background-color: lightyellow;
+  background-color: #ffde59;
   color: black;
   margin: 0.3125rem;
   border-radius: 0.125rem;
+}
+
+article button:active {
+  background-color: #ffde59;
 }
 
 * {
