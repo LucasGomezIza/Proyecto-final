@@ -332,6 +332,16 @@ div {
     line-height: 1.6;
   }
 }
+@media (max-width: 768px) {
+  button {
+    margin-top: 0.625rem;
+    align-items: baseline;
+    padding: 0.3125rem 0.625rem;
+  }
+  article button:active {
+    background-color: #ffde59;
+  }
+}
 @media (max-width: 425px) {
   .textMain {
     width: 90%;

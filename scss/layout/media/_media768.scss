@@ -61,3 +61,15 @@
         line-height: 1.6;
     }
 }
+
+@media (max-width:768px){
+    button {
+        margin-top: .625rem;
+        align-items: baseline;
+        padding: .3125rem .625rem;
+    }
+    article button:active{
+        background-color: #ffde59;
+    }
+    
+}
