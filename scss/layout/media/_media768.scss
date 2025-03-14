@@ -25,9 +25,14 @@
         flex-wrap: wrap;
         position: relative;
     }
+    #menu-toggle:checked ~ .nav-links {
+        display: none;
+        flex-direction: row;
+        gap: .625rem;
+    }
     .nav-links {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         top: 60px;
         left: 0;
@@ -42,9 +47,17 @@
     .menu-icon {
         display: block;
     }
-    #menu-toggle:checked ~ .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: .625rem;
+}
+
+@media (max-width: 768px) {
+    .sectQS {
+        padding: 20px;
+    }
+
+    .diQS {
+        max-width: 100%;
+        width: 90%;
+        font-size: 16px;
+        line-height: 1.6;
     }
 }

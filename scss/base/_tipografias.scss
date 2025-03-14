@@ -50,3 +50,18 @@ h2{
         font-size: 1.5625rem;
     }
 }
+
+.sectQS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    div{
+        max-width: 900px;
+        width: 80%;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.8;
+        color: white;
+    }
+}

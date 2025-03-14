@@ -69,33 +69,21 @@ h2 {
   font-size: 1.5625rem;
 }
 
-/*header{
-    div{
-        display: flex;
-        justify-content: space-between;
-        img{
-            width: 3.125rem;
-        }
-        nav{
-            display: flex;
-            ul{
-                display: flex;
-                list-style: none;
-                li{
-                    margin: .3125rem;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        font-size: 1.25rem;
-                        &:hover{
-                            color:#ffde59;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}*/
+.sectQS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.sectQS div {
+  max-width: 900px;
+  width: 80%;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
+}
+
 header div img {
   width: 3.125rem;
 }
@@ -154,7 +142,7 @@ form button {
 
 .textMain {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 5%;
   transform: translateY(-50%);
   color: white;
@@ -288,9 +276,9 @@ div {
 
 @media (max-width: 1024px) {
   .gridCont {
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(4, 250px);
-    grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8";
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 .";
   }
 }
 @media (max-width: 768px) {
@@ -310,9 +298,14 @@ div {
     flex-wrap: wrap;
     position: relative;
   }
+  #menu-toggle:checked ~ .nav-links {
+    display: none;
+    flex-direction: row;
+    gap: 0.625rem;
+  }
   .nav-links {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     top: 60px;
     left: 0;
@@ -327,13 +320,19 @@ div {
   .menu-icon {
     display: block;
   }
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-    flex-direction: row;
-    gap: 0.625rem;
+}
+@media (max-width: 768px) {
+  .sectQS {
+    padding: 20px;
+  }
+  .diQS {
+    max-width: 100%;
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.6;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .textMain {
     width: 90%;
     font-size: 10px;
@@ -346,11 +345,18 @@ div {
     font-size: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .gridCont {
     grid-template-columns: repeat(1, 300px);
-    grid-template-rows: repeat(8, 250px);
+    grid-template-rows: repeat(8, 200px);
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8";
+  }
+}
+@media (max-width: 375px) {
+  .diQS {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 95%;
   }
 }
 
